@@ -40,6 +40,10 @@ const Main = ({navigation}) => {
           onPress={() => navigation.navigate('IntroGuide')}
           text={'IntroGuide'}
         />
+        <NavButton
+          onPress={() => navigation.navigate('CircularLoader')}
+          text={'CircularLoader'}
+        />
       </ScrollView>
     </Container>
   );

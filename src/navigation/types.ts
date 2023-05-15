@@ -7,6 +7,7 @@ export type RootStackParamList = {
   DynamicTabs: undefined;
   Skeletons: undefined;
   IntroGuide: undefined;
+  CircularLoader: undefined;
 };
 
 export type RootStackScreenProps<T extends keyof RootStackParamList> =

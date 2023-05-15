@@ -5,6 +5,7 @@ import {RootStackParamList} from './types';
 
 import Main from '../screens/Main';
 import IntroGuideScreen from '../screens/IntroGuide';
+import CircularLoaderScreen from '../screens/CircularLoader';
 
 const RootStack = createNativeStackNavigator<RootStackParamList>();
 const RootNavigator: FunctionComponent = () => {
@@ -24,6 +25,12 @@ const RootNavigator: FunctionComponent = () => {
         key={'IntroGuide'}
         name={'IntroGuide'}
         component={IntroGuideScreen}
+        options={{headerShown: false}}
+      />
+      <RootStack.Screen
+        key={'CircularLoader'}
+        name={'CircularLoader'}
+        component={CircularLoaderScreen}
         options={{headerShown: false}}
       />
     </RootStack.Navigator>
